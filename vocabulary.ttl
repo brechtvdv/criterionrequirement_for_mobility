@@ -24,6 +24,7 @@ modi:Ontology a owl:Ontology ;
             dct:creator <https://w3id.org/people/brechtvdv/#me> .
             
 modi:CriterionRequirementForMaaSSubsidy a rdfs:Class ;
+              rdfs:subClassOf <http://data.europa.eu/m8g/CriterionRequirement> ; 
               rdfs:label "Criterion requirement for MaaS subsidies"@en ;
               rdfs:comment "Describes the modal, time, location, minimum/maximum duration... of one route segment of a traveller must comply with."@en .
 
