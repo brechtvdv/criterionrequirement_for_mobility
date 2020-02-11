@@ -1,0 +1,44 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skos-thes: <http://purl.org/iso25964/skos-thes#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://lodi.ilabt.imec.be/modi/thesauri/modality> a skos:ConceptScheme ;
+    dcterms:identifier "modalities" ;
+    skos:hasTopConcept <https://lodi.ilabt.imec.be/modi/thesauri/modality/0>,
+    <https://lodi.ilabt.imec.be/modi/thesauri/modality/1>,
+    <https://lodi.ilabt.imec.be/modi/thesauri/modality/2>,
+    <https://lodi.ilabt.imec.be/modi/thesauri/modality/3>,
+    <https://lodi.ilabt.imec.be/modi/thesauri/modality/4>,
+    <https://lodi.ilabt.imec.be/modi/thesauri/modality/5> ;
+    skos:prefLabel "Modalities"@en,
+        "Modaliteiten"@nl .
+
+<https://lodi.ilabt.imec.be/modi/thesauri/modality/0> a skos:Concept ;
+    dcterms:identifier 0 ;
+    skos:inScheme <https://lodi.ilabt.imec.be/modi/thesauri/modality> ;
+    skos:prefLabel "by foot"@en ;
+    skos:prefLabel "te voet"@nl ;
+    skos:note "The traveller went by foot."@en ;
+    skos:note "De reiziger ging te voet."@nl .
+
+<https://lodi.ilabt.imec.be/modi/thesauri/modality/1> a skos:Concept ;
+    dcterms:identifier 1 ;
+    skos:inScheme <https://lodi.ilabt.imec.be/modi/thesauri/modality> ;
+    skos:prefLabel "train"@en ;
+    skos:prefLabel "trein"@nl ;
+    skos:note "The traveller took the train."@en ;
+    skos:note "De reiziger nam de trein."@nl .
+
+<https://lodi.ilabt.imec.be/modi/thesauri/modality/2> a skos:Concept ;
+    dcterms:identifier 2 ;
+    skos:inScheme <https://lodi.ilabt.imec.be/modi/thesauri/modality> ;
+    skos:prefLabel "cargobike"@en ;
+    skos:prefLabel "bakfiets"@nl ;
+    skos:note "The traveller took the cargo bike."@en ;
+    skos:note "De reiziger nam de bakfiets."@nl .
+    
