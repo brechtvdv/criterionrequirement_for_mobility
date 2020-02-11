@@ -1,0 +1,57 @@
+@prefix otl: <https://w3id.org/opentrafficlights#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix modi: <https://lodi.ilabt.imec.be/modi#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+
+<https://lodi.ilabt.imec.be/modi> a foaf:Document ;
+                                              foaf:primaryTopic otl:Ontology ;
+                                              dct:issued "2020-02-11"^^xsd:date ;
+                                              dct:modified "2020-02-11"^^xsd:date ;
+                                              dct:license <http://creativecommons.org/licenses/by/3.0/> .
+
+modi:Ontology a owl:Ontology ;
+            rdfs:label "Criterion requirement for mobility as a service"@en ;
+            rdfs:comment "This ontology provides the terms necessary to describe a criterion requirement for Mobility as a Service subsidies."@en ;
+            vann:preferredNamespacePrefix "modi" ;
+            vann:preferredNamespaceUri "https://lodi.ilabt.imec.be/modi#" ;
+            dct:creator <https://w3id.org/people/brechtvdv/#me> .
+            
+modi:CriterionRequirementForMaaSSubsidy a rdfs:Class ;
+              rdfs:label "Criterion requirement for MaaS subsidies"@en ;
+              rdfs:comment "Describes the modal, time, location, minimum/maximum duration... of one route segment of a traveller must comply with."@en .
+
+modi:modality a rdf:Property ;
+               rdfs:label "modality"@en ;
+               rdfs:comment "The transportation modality that a route segment must comply with."@en ;
+               rdfs:domain modi:CriterionRequirementForMaaSSubsidy;
+               rdfs:range skos:Concept .
+
+modi:starttime a rdf:Property ;
+               rdfs:label "start time"@en ;
+               rdfs:comment "The route segment of the journey must happen after this start time."@en ;
+               rdfs:domain modi:CriterionRequirementForMaaSSubsidy;
+               rdfs:range xsd:dateTime .
+               
+modi:endtime a rdf:Property ;
+               rdfs:label "end time"@en ;
+               rdfs:comment "The route segment of the journey must happen before this end time."@en ;
+               rdfs:domain modi:CriterionRequirementForMaaSSubsidy;
+               rdfs:range xsd:dateTime .
+               
+modi:location a rdf:Property ;
+               rdfs:label "location"@en ;
+               rdfs:comment "The route segment of the journey must be located inside this location."@en ;
+               rdfs:domain modi:CriterionRequirementForMaaSSubsidy .
+               
+modi:routeSegmentMustHappenBefore a rdf:Property ;
+               rdfs:label "must comply with"@en ;
+               rdfs:comment "The route segment of another criterion requirement for MaaS subsidy must have happened before the route segment of this criterion requirement."@en ;
+               rdfs:domain modi:CriterionRequirementForMaaSSubsidy ;
+               rdfs:range modi:CriterionRequirementForMaaSSubsidy .
