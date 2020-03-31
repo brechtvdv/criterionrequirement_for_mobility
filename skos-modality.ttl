@@ -41,4 +41,36 @@
     skos:prefLabel "bakfiets"@nl ;
     skos:note "The traveller took the cargo bike."@en ;
     skos:note "De reiziger nam de bakfiets."@nl .
+
+<https://lodi.ilabt.imec.be/modi/thesauri/modality/3> a skos:Concept ;
+    dcterms:identifier 3 ;
+    skos:inScheme <https://lodi.ilabt.imec.be/modi/thesauri/modality> ;
+    skos:prefLabel "fiets"@en ;
+    skos:prefLabel "fiets"@nl ;
+    skos:note "The traveller took the bike."@en ;
+    skos:note "De reiziger nam de fiets."@nl .
+
+<https://lodi.ilabt.imec.be/modi/thesauri/modality/4> a skos:Concept ;
+    dcterms:identifier 4 ;
+    skos:inScheme <https://lodi.ilabt.imec.be/modi/thesauri/modality> ;
+    skos:prefLabel "Electric fiets"@en ;
+    skos:prefLabel "Elektrische fiets"@nl ;
+    skos:note "The traveller took the electric bike."@en ;
+    skos:note "De reiziger nam de elektrische fiets."@nl .
+
+<https://lodi.ilabt.imec.be/modi/thesauri/modality/5> a skos:Concept ;
+    dcterms:identifier 5 ;
+    skos:inScheme <https://lodi.ilabt.imec.be/modi/thesauri/modality> ;
+    skos:prefLabel "Electric scooter"@en ;
+    skos:prefLabel "Elektrische scooter"@nl ;
+    skos:note "The traveller took the electric scooter."@en ;
+    skos:note "De reiziger nam de elektrische scooter."@nl .
+
+<https://lodi.ilabt.imec.be/modi/thesauri/modality/6> a skos:Concept ;
+    dcterms:identifier 6 ;
+    skos:inScheme <https://lodi.ilabt.imec.be/modi/thesauri/modality> ;
+    skos:prefLabel "Electric step"@en ;
+    skos:prefLabel "Step"@nl ;
+    skos:note "The traveller took the electric step."@en ;
+    skos:note "De reiziger nam de elektrische step."@nl .
     
