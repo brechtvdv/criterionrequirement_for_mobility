@@ -45,7 +45,7 @@
 <https://lodi.ilabt.imec.be/modi/thesauri/modality/3> a skos:Concept ;
     dcterms:identifier 3 ;
     skos:inScheme <https://lodi.ilabt.imec.be/modi/thesauri/modality> ;
-    skos:prefLabel "fiets"@en ;
+    skos:prefLabel "bike"@en ;
     skos:prefLabel "fiets"@nl ;
     skos:note "The traveller took the bike."@en ;
     skos:note "De reiziger nam de fiets."@nl .
@@ -53,7 +53,7 @@
 <https://lodi.ilabt.imec.be/modi/thesauri/modality/4> a skos:Concept ;
     dcterms:identifier 4 ;
     skos:inScheme <https://lodi.ilabt.imec.be/modi/thesauri/modality> ;
-    skos:prefLabel "Electric fiets"@en ;
+    skos:prefLabel "Electric bike"@en ;
     skos:prefLabel "Elektrische fiets"@nl ;
     skos:note "The traveller took the electric bike."@en ;
     skos:note "De reiziger nam de elektrische fiets."@nl .
